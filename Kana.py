@@ -65,3 +65,8 @@ katakana_dict = {
 }
 
 
+for key, value in hiragana_dict.items():
+    print(f"{key}: {value}")
+
+for key, value in katakana_dict.items():
+    print(f"{key}: {value}")
