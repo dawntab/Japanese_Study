@@ -64,9 +64,22 @@ katakana_dict = {
     'ピャ': 'pya', 'ピュ': 'pyu', 'ピョ': 'pyo'
 }
 
+def print_all_hiragana():
+    for key, value in hiragana_dict.items():
+        print(f"{key}: {value}")
 
-for key, value in hiragana_dict.items():
-    print(f"{key}: {value}")
+def print_all_katakana():
+    for key, value in katakana_dict.items():
+        print(f"{key}: {value}")
 
-for key, value in katakana_dict.items():
-    print(f"{key}: {value}")
+while True:
+    menu_number = int(input("Number: "))
+    
+    if menu_number == 1:
+        print_all_hiragana()
+    elif menu_number == 2:
+        print_all_katakana()
+    elif menu_number == 0:
+        break
+    else:
+        print("incorrect input")
