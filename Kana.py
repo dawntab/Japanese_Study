@@ -1,9 +1,3 @@
-# 이 파이썬 코드의 목적 세가지
-
-# 1. 히라가나, 가타카나 마스터
-# 2. 파이썬을 이용해 코드를 작성하면서 기본적으로 많이 사용하게 되는 것을 자연스럽게 쓸 수 있을 정도로 익히기
-# 3. VScode에 콘솔창에서 결과가 니오는 것이 아닌 다른 형태의 결과 값이 나오게 해보기
-
 import random
 
 hiragana_dict = {
@@ -41,23 +35,3 @@ katakana_dict = {
     'バ': 'ba', 'ビ': 'bi', 'ブ': 'bu', 'ベ': 'be', 'ボ': 'bo',
     'パ': 'pa', 'ピ': 'pi', 'プ': 'pu', 'ペ': 'pe', 'ポ': 'po'
 }
-
-def print_all_hiragana():
-    for key, value in hiragana_dict.items():
-        print(f"{key}: {value}")
-
-def print_all_katakana():
-    for key, value in katakana_dict.items():
-        print(f"{key}: {value}")
-
-while True:
-    menu_number = int(input("Number: "))
-    
-    if menu_number == 1:
-        print_all_hiragana()
-    elif menu_number == 2:
-        print_all_katakana()
-    elif menu_number == 0:
-        break
-    else:
-        print("incorrect input")
